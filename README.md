@@ -1,6 +1,4 @@
-# SparkNetworksAssignments
-
-Matchmaking assigment:
+# SparkNetworks Assignments
 
 Hello Team,
 
