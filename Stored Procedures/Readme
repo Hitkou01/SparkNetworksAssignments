@@ -20,3 +20,6 @@
       is the user which is being rejected.
       
   2) RejectMatches is responsible to update the MatchedUsers table to set the rejections for a user.
+
+
+Also in this folder I have uploaded TSQLScript, in which i will written some TSQL statements to verify the results of stored procedures and scripts.
