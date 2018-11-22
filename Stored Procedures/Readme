@@ -1,1 +1,22 @@
 
+ Comments for Stored Procedure GenerateMatches:
+ 
+ 1) GenerateMatches accepts a optional parameter @DistFilter(default value is 300 (km)).
+      in stored procedure.Also this stored procedure is accepting value as kilometer.
+ 2) GenerateMatches is responsible for populating MatchedUsers table, every time it will insert 2 values per user. 
+ 
+ 
+ Comments for Stored Procedure GetMatches:
+ 
+ 1) GetMatches accepts a mandatory parameter i.e. @UserId. @UserId will be the user for which it will pull all matches and their details
+    from MatchedUser table.
+    
+ 2) GetMatches is responsible to fetch all the matches for the provided userId.
+ 
+ 
+ Commments for Stored Procedure RejectMatches:
+ 
+ 1) RejectMatches accepts 2 mandatory parameters i.e. @UserId,@MatchUserId, @UserId will be the source user who is rejecting. @MatchUserId
+      is the user which is being rejected.
+      
+  2) RejectMatches is responsible to update the MatchedUsers table to set the rejections for a user.
