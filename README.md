@@ -2,19 +2,29 @@
 
 Hello Team,
 
-As discussed I have completed the assignment in TSQL language and to test the same there will be below steps to download SSMS(interface to connect to Microsoft server) to execute and test the Stored Procedures and the insertion script.
+As discussed I have completed the assignment in TSQL language and to test the same there will be below steps to download Azure Data Studio(database tool to connect to Azure SQL Server) to execute and test the Stored Procedures and the insertion script.
 
-STEPS TO DOWNLOAD SSMS(SQL Server Management Studio) AND CONNECT TO AZURE SQL SERVER: 
+STEPS TO DOWNLOAD ADS(Azure Data Studio) AND CONNECT TO AZURE SQL SERVER: 
 
-1) Download the SSMS. Attached in the same repository in zip file.
-2) In Management Studio you can connect to Object Explorer(File -> Connect Object Explorer).
-3) Please provide the Server Name(Mentioned in the email).
-4) In Authentication Dropdown please select SQL Server Authentication.
-5) Please provide Login and Password(Mentioned in the email).
-6) After connecting you can see SparkNetworks(created manually) database under Databases folder.
+1) Download the ADS for Windows or macOS from https://docs.microsoft.com/en-us/sql/azure-data-studio/download?view=sql-server-2017
+
+NOTE: If you are downloading for Windows please select ".zip" link and follow below steps. If you are doing it for macOS please follow 2 steps in above mentioned download link.
+
+After downloading and extracting .zip file, please follow below steps to connect to Azure SQL Server:
+
+1) In azuredatastudio-windows folder you will find azuredatastudio application, please launch it.
+2) In Azure data Studio now we need to setup a connection.
+3) Connection Type: Microsoft SQL Server
+4) Server: Mentioned in the email
+5) Authentication Type: SQL Login
+6) User Name: Mentioned in Email
+7) Password: Mentioned in Email
+8) After providing above details, you can select SparkNetworks(created manually) database under Database dropdown and connect it.
+9) After connecting you can open new query window by File -> New query
 
 
-Attached are the TSQL scripts and StoredProcedures(Also attached are same scripts in the assignment submission email). You can also open them in SSMS query window and execute it on above mentioned DB to populate data.
+
+Attached are the TSQL scripts and StoredProcedures.
 
 
 
