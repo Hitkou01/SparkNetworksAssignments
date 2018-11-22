@@ -1,1 +1,27 @@
 
+In this script I am Inserting the data after reading it from @Json Object which can be changed. 
+I am using OPENJSON in from clause to rad the data.
+
+1) I am inserting distinct data in religion table seperately keeping it as my aster table.
+2) Then I am inserting User attributes i.e. age, height, pokemon etc. and keeping religion id as foreign key to keep corresponding 
+religions.
+3) After that I am inserting data in UserAddress, main motive of creating different table is assuming 1 user 
+can have multiple addresses but only 1 can be active. Also in this table I am only inserting lat and lon for every user in user table. 
+For now Isactive will get set for only 1 address per user by calculating the rownmber.
+4) After inserting data in UserAddress table I am again updating the same table to calculate geographical location on 
+the basis of lat and lon. This geographical location will help me to calculate the distance between 2 users while generating match.
+Same this table is having UserId as its foreign key.
+5) Also I am inserting Users pictures in different table with multiple pictures per user but only 1 picture will be main. 
+So i have created UserMedia table with Photourl and a bit column IsActive.
+
+This data insertion script is made to handle below cases:
+
+1) Script will not duplicate record even if executed more than 1 time, except UserMedia table.
+2) User will not get inserted if ReligionName present in Json is not present in Religion table.
+3) UserAddress will not get inserted if the username present in Json is not present in User table.
+
+
+
+NOTE: 
+According to the data provided I am assuming user attributes collectively i.e. UserName,UserAge,title and height are unique. 
+So no user with same value in these attributes will not get inserted
